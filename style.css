@@ -1,0 +1,498 @@
+/*example font-size:30px;  font-size:pxToRem(30); */
+:root {
+  --c-mainDark: #001631;
+  --c-mainDark-90: #001631E6;
+  --c-mainDark-85: #001631D9;
+  --c-mainDark-80: #001631CC;
+  --c-mainDark-75: #001631BF;
+  --c-mainDark-70: #001631B3;
+  --c-mainDark-60: #00163199;
+  --c-mainDark-50: #00163180;
+  --c-mainDark-40: #00163166;
+  --c-mainDark-30: #0016314D;
+  --c-mainDark-25: #00163140;
+  --c-mainDark-20: #00163133;
+  --c-mainDark-15: #00163126;
+  --c-mainDark-10: #0016311A;
+  --c-mainDark-5: #0016310D;
+  --c-mainDark-0: #00163100;
+  --c-darkRed: #E23820;
+  --c-darkRed-90: #E23820E6;
+  --c-darkRed-85: #E23820D9;
+  --c-darkRed-80: #E23820CC;
+  --c-darkRed-75: #E23820BF;
+  --c-darkRed-70: #E23820B3;
+  --c-darkRed-60: #E2382099;
+  --c-darkRed-50: #E2382080;
+  --c-darkRed-40: #E2382066;
+  --c-darkRed-30: #E238204D;
+  --c-darkRed-25: #E2382040;
+  --c-darkRed-20: #E2382033;
+  --c-darkRed-15: #E2382026;
+  --c-darkRed-10: #E238201A;
+  --c-darkRed-5: #E238200D;
+  --c-darkRed-0: #E2382000;
+  --c-lightRed: #F54E39;
+  --c-lightRed-90: #F54E39E6;
+  --c-lightRed-85: #F54E39D9;
+  --c-lightRed-80: #F54E39CC;
+  --c-lightRed-75: #F54E39BF;
+  --c-lightRed-70: #F54E39B3;
+  --c-lightRed-60: #F54E3999;
+  --c-lightRed-50: #F54E3980;
+  --c-lightRed-40: #F54E3966;
+  --c-lightRed-30: #F54E394D;
+  --c-lightRed-25: #F54E3940;
+  --c-lightRed-20: #F54E3933;
+  --c-lightRed-15: #F54E3926;
+  --c-lightRed-10: #F54E391A;
+  --c-lightRed-5: #F54E390D;
+  --c-lightRed-0: #F54E3900;
+  --c-darkBlue: #2A31E8;
+  --c-darkBlue-90: #2A31E8E6;
+  --c-darkBlue-85: #2A31E8D9;
+  --c-darkBlue-80: #2A31E8CC;
+  --c-darkBlue-75: #2A31E8BF;
+  --c-darkBlue-70: #2A31E8B3;
+  --c-darkBlue-60: #2A31E899;
+  --c-darkBlue-50: #2A31E880;
+  --c-darkBlue-40: #2A31E866;
+  --c-darkBlue-30: #2A31E84D;
+  --c-darkBlue-25: #2A31E840;
+  --c-darkBlue-20: #2A31E833;
+  --c-darkBlue-15: #2A31E826;
+  --c-darkBlue-10: #2A31E81A;
+  --c-darkBlue-5: #2A31E80D;
+  --c-darkBlue-0: #2A31E800;
+  --c-lightBlue: #3E45FF;
+  --c-lightBlue-90: #3E45FFE6;
+  --c-lightBlue-85: #3E45FFD9;
+  --c-lightBlue-80: #3E45FFCC;
+  --c-lightBlue-75: #3E45FFBF;
+  --c-lightBlue-70: #3E45FFB3;
+  --c-lightBlue-60: #3E45FF99;
+  --c-lightBlue-50: #3E45FF80;
+  --c-lightBlue-40: #3E45FF66;
+  --c-lightBlue-30: #3E45FF4D;
+  --c-lightBlue-25: #3E45FF40;
+  --c-lightBlue-20: #3E45FF33;
+  --c-lightBlue-15: #3E45FF26;
+  --c-lightBlue-10: #3E45FF1A;
+  --c-lightBlue-5: #3E45FF0D;
+  --c-lightBlue-0: #3E45FF00;
+  --c-white: #ECECEE;
+  --c-white-90: #ECECEEE6;
+  --c-white-85: #ECECEED9;
+  --c-white-80: #ECECEECC;
+  --c-white-75: #ECECEEBF;
+  --c-white-70: #ECECEEB3;
+  --c-white-60: #ECECEE99;
+  --c-white-50: #ECECEE80;
+  --c-white-40: #ECECEE66;
+  --c-white-30: #ECECEE4D;
+  --c-white-25: #ECECEE40;
+  --c-white-20: #ECECEE33;
+  --c-white-15: #ECECEE26;
+  --c-white-10: #ECECEE1A;
+  --c-white-5: #ECECEE0D;
+  --c-white-0: #ECECEE00;
+  --c-grey: #798493;
+  --c-grey-90: #798493E6;
+  --c-grey-85: #798493D9;
+  --c-grey-80: #798493CC;
+  --c-grey-75: #798493BF;
+  --c-grey-70: #798493B3;
+  --c-grey-60: #79849399;
+  --c-grey-50: #79849380;
+  --c-grey-40: #79849366;
+  --c-grey-30: #7984934D;
+  --c-grey-25: #79849340;
+  --c-grey-20: #79849333;
+  --c-grey-15: #79849326;
+  --c-grey-10: #7984931A;
+  --c-grey-5: #7984930D;
+  --c-grey-0: #79849300;
+  --c-realWhite: #ffffff;
+  --c-realWhite-90: #ffffffE6;
+  --c-realWhite-85: #ffffffD9;
+  --c-realWhite-80: #ffffffCC;
+  --c-realWhite-75: #ffffffBF;
+  --c-realWhite-70: #ffffffB3;
+  --c-realWhite-60: #ffffff99;
+  --c-realWhite-50: #ffffff80;
+  --c-realWhite-40: #ffffff66;
+  --c-realWhite-30: #ffffff4D;
+  --c-realWhite-25: #ffffff40;
+  --c-realWhite-20: #ffffff33;
+  --c-realWhite-15: #ffffff26;
+  --c-realWhite-10: #ffffff1A;
+  --c-realWhite-5: #ffffff0D;
+  --c-realWhite-0: #ffffff00;
+  --c-realBlack: #000000;
+  --c-realBlack-90: #000000E6;
+  --c-realBlack-85: #000000D9;
+  --c-realBlack-80: #000000CC;
+  --c-realBlack-75: #000000BF;
+  --c-realBlack-70: #000000B3;
+  --c-realBlack-60: #00000099;
+  --c-realBlack-50: #00000080;
+  --c-realBlack-40: #00000066;
+  --c-realBlack-30: #0000004D;
+  --c-realBlack-25: #00000040;
+  --c-realBlack-20: #00000033;
+  --c-realBlack-15: #00000026;
+  --c-realBlack-10: #0000001A;
+  --c-realBlack-5: #0000000D;
+  --c-realBlack-0: #00000000;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("/fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-ExtraboldItalic.eot");
+  src: local("Gilroy Extrabold Italic"), local("Gilroy-ExtraboldItalic"), url("/fonts/Gilroy/Gilroy-ExtraboldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-ExtraboldItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-ExtraboldItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-ExtraboldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("/fonts/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Bold.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Black.eot");
+  src: local("Gilroy Black"), local("Gilroy-Black"), url("/fonts/Gilroy/Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Black.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Black.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("/fonts/Gilroy/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Light.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Light.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Semibold.eot");
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("/fonts/Gilroy/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Semibold.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Semibold.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("/fonts/Gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Medium.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-MediumItalic.eot");
+  src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"), url("/fonts/Gilroy/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-MediumItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-MediumItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-BlackItalic.eot");
+  src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url("/fonts/Gilroy/Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-BlackItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-BlackItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-UltraLight.eot");
+  src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("/fonts/Gilroy/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-UltraLight.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-UltraLight.woff") format("woff"), url("/fonts/Gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-RegularItalic.eot");
+  src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"), url("/fonts/Gilroy/Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-RegularItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-RegularItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-SemiboldItalic.eot");
+  src: local("Gilroy Semibold Italic"), local("Gilroy-SemiboldItalic"), url("/fonts/Gilroy/Gilroy-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-SemiboldItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-SemiboldItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-HeavyItalic.eot");
+  src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url("/fonts/Gilroy/Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-HeavyItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-HeavyItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Extrabold.eot");
+  src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url("/fonts/Gilroy/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Extrabold.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Extrabold.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-BoldItalic.eot");
+  src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url("/fonts/Gilroy/Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-BoldItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-BoldItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-UltraLightItalic.eot");
+  src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"), url("/fonts/Gilroy/Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-UltraLightItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-UltraLightItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-LightItalic.eot");
+  src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url("/fonts/Gilroy/Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-LightItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-LightItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Heavy.eot");
+  src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("/fonts/Gilroy/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Heavy.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Heavy.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Thin.eot");
+  src: local("Gilroy Thin"), local("Gilroy-Thin"), url("/fonts/Gilroy/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-Thin.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-Thin.woff") format("woff"), url("/fonts/Gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-ThinItalic.eot");
+  src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url("/fonts/Gilroy/Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy/Gilroy-ThinItalic.woff2") format("woff2"), url("/fonts/Gilroy/Gilroy-ThinItalic.woff") format("woff"), url("/fonts/Gilroy/Gilroy-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+:root {
+  --fluid-min-width: 375;
+  --fluid-max-width: 1240;
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1240px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+:root {
+  --f--2-min: 12;
+  --f--2-max: 12;
+  --step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+  --f--1-min: 15;
+  --f--1-max: 15;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+  --f-0-min: 16.00;
+  --f-0-max: 20.00;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+  --f-1-min: 19.20;
+  --f-1-max: 24.00;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+  /*h4*/
+  --f-2-min: 24;
+  --f-2-max: 24;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+  /*h3*/
+  --f-3-min: 28;
+  --f-3-max: 32;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+  /*h2*/
+  --f-4-min: 28;
+  --f-4-max: 52;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+  /*h1*/
+  --f-5-min: 40;
+  --f-5-max: 72;
+  --step-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+  --sp-3xs-min: (var(--sp-s-min) * 0.25);
+  --sp-3xs-max: (var(--sp-s-max) * 0.25);
+  --sp-2xs-min: (var(--sp-s-min) * 0.5);
+  --sp-2xs-max: (var(--sp-s-max) * 0.5);
+  --sp-xs-min: (var(--sp-s-min) * 0.75);
+  --sp-xs-max: (var(--sp-s-max) * 0.75);
+  --sp-s-min: (var(--f-0-min, 16));
+  --sp-s-max: (var(--f-0-max, 20));
+  --sp-m-min: 24;
+  --sp-m-max: 32;
+  --sp-l-min: 32;
+  --sp-l-max: 52;
+  --sp-xl-min: 52;
+  --sp-xl-max: 64;
+  --sp-2xl-min: 52;
+  --sp-2xl-max: 80;
+  --sp-3xl-min: 80;
+  --sp-3xl-max: 132;
+  /* T-shirt sizes */
+  --space-3xs: calc(((var(--sp-3xs-min) / 16) * 1rem) + (var(--sp-3xs-max) - var(--sp-3xs-min)) * var(--fluid-bp));
+  --space-2xs: calc(((var(--sp-2xs-min) / 16) * 1rem) + (var(--sp-2xs-max) - var(--sp-2xs-min)) * var(--fluid-bp));
+  --space-xs: calc(((var(--sp-xs-min) / 16) * 1rem) + (var(--sp-xs-max) - var(--sp-xs-min)) * var(--fluid-bp));
+  --space-s: calc(((var(--sp-s-min) / 16) * 1rem) + (var(--sp-s-max) - var(--sp-s-min)) * var(--fluid-bp));
+  --space-m: calc(((var(--sp-m-min) / 16) * 1rem) + (var(--sp-m-max) - var(--sp-m-min)) * var(--fluid-bp));
+  --space-l: calc(((var(--sp-l-min) / 16) * 1rem) + (var(--sp-l-max) - var(--sp-l-min)) * var(--fluid-bp));
+  --space-xl: calc(((var(--sp-xl-min) / 16) * 1rem) + (var(--sp-xl-max) - var(--sp-xl-min)) * var(--fluid-bp));
+  --space-2xl: calc(((var(--sp-2xl-min) / 16) * 1rem) + (var(--sp-2xl-max) - var(--sp-2xl-min)) * var(--fluid-bp));
+  --space-3xl: calc(((var(--sp-3xl-min) / 16) * 1rem) + (var(--sp-3xl-max) - var(--sp-3xl-min)) * var(--fluid-bp));
+  /* One-up pairs */
+  --space-3xs-2xs: calc(((var(--sp-3xs-min) / 16) * 1rem) + (var(--sp-2xs-max) - var(--sp-3xs-min)) * var(--fluid-bp));
+  --space-2xs-xs: calc(((var(--sp-2xs-min) / 16) * 1rem) + (var(--sp-xs-max) - var(--sp-2xs-min)) * var(--fluid-bp));
+  --space-xs-s: calc(((var(--sp-xs-min) / 16) * 1rem) + (var(--sp-s-max) - var(--sp-xs-min)) * var(--fluid-bp));
+  --space-s-m: calc(((var(--sp-s-min) / 16) * 1rem) + (var(--sp-m-max) - var(--sp-s-min)) * var(--fluid-bp));
+  --space-m-l: calc(((var(--sp-m-min) / 16) * 1rem) + (var(--sp-l-max) - var(--sp-m-min)) * var(--fluid-bp));
+  --space-l-xl: calc(((var(--sp-l-min) / 16) * 1rem) + (var(--sp-xl-max) - var(--sp-l-min)) * var(--fluid-bp));
+  --space-xl-2xl: calc(((var(--sp-xl-min) / 16) * 1rem) + (var(--sp-2xl-max) - var(--sp-xl-min)) * var(--fluid-bp));
+  --space-2xl-3xl: calc(((var(--sp-2xl-min) / 16) * 1rem) + (var(--sp-3xl-max) - var(--sp-2xl-min)) * var(--fluid-bp));
+  /* Custom pairs */
+  --space-s-l: calc(((var(--sp-s-min) / 16) * 1rem) + (var(--sp-l-max) - var(--sp-s-min)) * var(--fluid-bp));
+}
+
+@media screen and (max-width: 374px) {
+  :root {
+    --step-3: var(--step-4);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  vertical-align: baseline;
+}
+
+html, body {
+  font-size: var(--step-0);
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+
+h2 {
+  font-size: var(--step-4);
+}
+
+h3 {
+  font-size: var(--step-3);
+}
+
+h4 {
+  font-size: var(--step-2);
+}
+
+p {
+  font-size: var(--step-0);
+}
+
+.fz-small {
+  font-size: var(--step--1);
+}
+
+.fz-xsmall {
+  font-size: var(--step--2);
+}
+
+.jb-bem-block {
+  color: black;
+}
+.jb-bem-block::after {
+  content: "";
+}
+
+/*@import 'modules/jb-bem-block';  for example *//*# sourceMappingURL=style.css.map */

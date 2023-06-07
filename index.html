@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .wrapper {
+            max-width: calc( var(--fluid-max-width) * 1px );
+            padding: 80px 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <main>
+        <div class="wrapper">
+            <h1>Test H1</h1>
+            <h2>Test H2</h2>
+            <h3>Test H3</h3>
+            <h4>Test H4</h4>
+            <p>Test P</p>
+            <p class="fz-small">Test small</p>
+            <p class="fz-xsmall">Test xsmall</p>
+
+            <div style="height: var(--space-3xs); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-2xs); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-xs); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-s); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-m); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-l); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-xl); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-2xl); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-3xl); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-3xs-2xs); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-2xs-xs); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-xs-s); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-s-m); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-m-l); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-l-xl); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-xl-2xl); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+            <div style="height: var(--space-2xl-3xl); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
+        </div>
+    </main>
+    <script src="/js/gsap/gsap.min.js"></script>
+    <script src="/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="/js/gsap/ScrollTo.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/home.js" defer></script>
+</body>
+</html>

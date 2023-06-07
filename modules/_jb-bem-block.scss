@@ -1,0 +1,26 @@
+.jb-bem-block{
+    color: black;
+    
+    &::after{
+        content: '';
+    }
+    
+    &.active{
+        display: none;
+        @media (max-width:$mob) {
+            display: block;
+        }
+    }
+
+    @media (max-width:$mob) {
+        color: bisque;
+    }
+    
+    &__bem-element{
+        color:green;
+
+        &_bem-modificator{
+            color:red;
+        }
+    }
+}

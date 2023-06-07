@@ -1,0 +1,213 @@
+:root {
+  --fluid-min-width: 375;
+  --fluid-max-width: 1240;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1240px) {
+  :root {
+      --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --f--2-min: 12;
+  --f--2-max: 12;
+  --step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f--1-min: 15;
+  --f--1-max: 15;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-0-min: 16.00;
+  --f-0-max: 20.00;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-1-min: 19.20;
+  --f-1-max: 24.00;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+
+  /*h4*/
+  --f-2-min: 24;
+  --f-2-max: 24;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+
+  /*h3*/
+  --f-3-min: 28;
+  --f-3-max: 32;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+
+  /*h2*/
+  --f-4-min: 28;
+  --f-4-max: 52;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+
+  /*h1*/
+  --f-5-min: 40;
+  --f-5-max: 72;
+  --step-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+
+
+  
+  --sp-3xs-min: (var(--sp-s-min) * 0.25); 
+  --sp-3xs-max: (var(--sp-s-max) * 0.25);
+
+  --sp-2xs-min: (var(--sp-s-min) * 0.5); 
+  --sp-2xs-max: (var(--sp-s-max) * 0.5);
+
+  --sp-xs-min: (var(--sp-s-min) * 0.75); 
+  --sp-xs-max: (var(--sp-s-max) * 0.75);
+
+  --sp-s-min: (var(--f-0-min, 16)); 
+  --sp-s-max: (var(--f-0-max, 20));
+
+  --sp-m-min: 24; 
+  --sp-m-max: 32;
+
+  --sp-l-min: 32; 
+  --sp-l-max: 52;
+
+  --sp-xl-min: 52; 
+  --sp-xl-max: 64;
+
+  --sp-2xl-min: 52; 
+  --sp-2xl-max: 80;
+
+  --sp-3xl-min: 80; 
+  --sp-3xl-max: 132;
+
+  /* T-shirt sizes */
+  --space-3xs: calc(((var(--sp-3xs-min) / 16) * 1rem) + (var(--sp-3xs-max) - var(--sp-3xs-min)) * var(--fluid-bp));
+  --space-2xs: calc(((var(--sp-2xs-min) / 16) * 1rem) + (var(--sp-2xs-max) - var(--sp-2xs-min)) * var(--fluid-bp));
+  --space-xs: calc(((var(--sp-xs-min) / 16) * 1rem) + (var(--sp-xs-max) - var(--sp-xs-min)) * var(--fluid-bp));
+  --space-s: calc(((var(--sp-s-min) / 16) * 1rem) + (var(--sp-s-max) - var(--sp-s-min)) * var(--fluid-bp));
+  --space-m: calc(((var(--sp-m-min) / 16) * 1rem) + (var(--sp-m-max) - var(--sp-m-min)) * var(--fluid-bp));
+  --space-l: calc(((var(--sp-l-min) / 16) * 1rem) + (var(--sp-l-max) - var(--sp-l-min)) * var(--fluid-bp));
+  --space-xl: calc(((var(--sp-xl-min) / 16) * 1rem) + (var(--sp-xl-max) - var(--sp-xl-min)) * var(--fluid-bp));
+  --space-2xl: calc(((var(--sp-2xl-min) / 16) * 1rem) + (var(--sp-2xl-max) - var(--sp-2xl-min)) * var(--fluid-bp));
+  --space-3xl: calc(((var(--sp-3xl-min) / 16) * 1rem) + (var(--sp-3xl-max) - var(--sp-3xl-min)) * var(--fluid-bp));
+  
+  /* One-up pairs */
+  --space-3xs-2xs: calc(((var(--sp-3xs-min) / 16) * 1rem) + (var(--sp-2xs-max) - var(--sp-3xs-min)) * var(--fluid-bp));
+  --space-2xs-xs: calc(((var(--sp-2xs-min) / 16) * 1rem) + (var(--sp-xs-max) - var(--sp-2xs-min)) * var(--fluid-bp));
+  --space-xs-s: calc(((var(--sp-xs-min) / 16) * 1rem) + (var(--sp-s-max) - var(--sp-xs-min)) * var(--fluid-bp));
+  --space-s-m: calc(((var(--sp-s-min) / 16) * 1rem) + (var(--sp-m-max) - var(--sp-s-min)) * var(--fluid-bp));
+  --space-m-l: calc(((var(--sp-m-min) / 16) * 1rem) + (var(--sp-l-max) - var(--sp-m-min)) * var(--fluid-bp));
+  --space-l-xl: calc(((var(--sp-l-min) / 16) * 1rem) + (var(--sp-xl-max) - var(--sp-l-min)) * var(--fluid-bp));
+  --space-xl-2xl: calc(((var(--sp-xl-min) / 16) * 1rem) + (var(--sp-2xl-max) - var(--sp-xl-min)) * var(--fluid-bp));
+  --space-2xl-3xl: calc(((var(--sp-2xl-min) / 16) * 1rem) + (var(--sp-3xl-max) - var(--sp-2xl-min)) * var(--fluid-bp));
+
+  /* Custom pairs */
+  --space-s-l: calc(((var(--sp-s-min) / 16) * 1rem) + (var(--sp-l-max) - var(--sp-s-min)) * var(--fluid-bp));
+}
+
+
+@media screen and (max-width: 374px) {
+  :root {
+    --step-3: var(--step-4);
+  }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+  font-family: 'Gilroy',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	vertical-align: baseline;
+}
+html, body {
+  font-size: var(--step-0);
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+h2 {
+  font-size: var(--step-4);
+}
+h3 {
+  font-size: var(--step-3);
+}
+h4 {
+  font-size: var(--step-2);
+}
+p {
+  font-size: var(--step-0);
+}
+.fz-small {
+  font-size: var(--step--1);
+}
+.fz-xsmall {
+  font-size: var(--step--2);
+}

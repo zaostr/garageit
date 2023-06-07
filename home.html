@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .wrapper {
+            max-width: calc( var(--fluid-max-width) * 1px );
+            padding: 80px 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+        .item {
+            min-height: 300px;
+        }
+        .sw {
+            position: relative;
+        }
+        .quote {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            padding: 20px;
+            background-color: var(--c-darkRed);
+            border-radius: 5px;
+        }
+        .swiper {
+            width: 100%;
+            max-width: 600px;
+            overflow: hidden;
+        }
+        .quote-wrapper {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .quote-wrapper > div {
+            display: flex;
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+            text-align: center;
+            justify-content: center;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            opacity: 0;
+        }
+        .swiper-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .swiper-wrapper > div {
+            display: flex;
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--c-lightBlue);
+        }
+
+
+
+
+
+        .office__section {
+            max-width: 100vw;
+            position: relative;
+            overflow: hidden;
+        }
+        .office {
+            position: relative;
+        }
+        .office__track {
+            display: flex;
+        }
+        .office__item {
+            height: 560px;
+            border-radius: 20px;
+            padding: 10px;
+            color: var(--c-realWhite);
+            background-color: var(--c-lightBlue);
+            /*max-width: calc(var(--fluid-max-width) * 1px - 2 * 20px);
+            width: calc(var(--fluid-max-width) * 1px - 2 * 20px);*/
+            min-width: calc(100%);
+        }
+        @media screen and (min-width: 1240px) {
+            .office__item {
+                min-width: calc(var(--fluid-max-width) * 1px - 2 * 20px);
+            }
+        }
+        .office__item:nth-child(1) {
+            background-color: red;
+        }
+
+        .office__item:nth-child(2) {
+            background-color: navy;
+        }
+
+        .office__item:nth-child(3) {
+            background-color: gray;
+        }
+
+        .office__item:nth-child(4) {
+            background-color: orange;
+        }
+
+        .office__item:nth-child(5) {
+            background-color: purple;
+        }
+
+        .office__item:nth-child(6) {
+            background-color: black;
+        }
+
+        .office__item:nth-child(7) {
+            background-color: green;
+        }
+
+        .office__item:nth-child(8) {
+            background-color: darkred;
+        }
+
+        .office__item:nth-child(9) {
+            background-color: teal;
+        }
+
+        .office__item:nth-child(10) {
+            background-color: steelblue;
+        }
+
+        .office__item:nth-child(11) {
+            background-color: salmon;
+        }
+        .full {
+            min-width: 373px;
+        }
+    </style>
+    <main>
+        <section style="height: 80vh; background-color: var(--c-lightRed);"></section>
+        <div>
+        </div>
+        <div class="wrapper">
+            <div class="row">
+                <div>
+                    <div class="sw" style="height: 200px; text-align: center; color: var(--c-realWhite); background-color: var(--c-darkBlue);">
+                        <div class="swiper">
+                            <lottie-player id="lot" src="https://assets5.lottiefiles.com/packages/lf20_zsJKuK.json" background="transparent" speed="1" style="width: 100%; height: 100%; position: absolute; z-index: 0;" ></lottie-player>
+                            <div class="swiper-wrapper">
+                                <div>1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>6</div>
+                                <div>7</div>
+                                <div>8</div>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <div class="quote-wrapper">
+                                <div class="quote-0">1</div>
+                                <div class="quote-1">2</div>
+                                <div class="quote-2">3</div>
+                                <div class="quote-3">4</div>
+                                <div class="quote-4">5</div>
+                                <div class="quote-5">6</div>
+                                <div class="quote-6">7</div>
+                                <div class="quote-7">play none none none</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="height: 100px; background-color: var(--c-darkRed); margin-bottom: 80px;"></div>
+                    <div class="items">
+                        <div class="item first">Test1</div>
+                        <div class="item">Test2</div>
+                        <div class="item">Test3</div>
+                        <div class="item">Test4</div>
+                        <div class="item">Test5</div>
+                        <div class="item">Test6</div>
+                        <div class="item">Test7</div>
+                        <div class="item last">это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section style="height: 100vh; background-color: var(--c-lightRed);"></section>
+        <section class="office__section">
+            <div class="wrapper">
+                <div class="office">
+                    <div class="office__track">
+                        <div class="office__item fakePin">1</div>
+                        <div class="office__item full fakePin">2</div>
+                        <div class="office__item fakePin">3</div>
+                        <div class="office__item fakePin">4</div>
+                        <div class="office__item full fakePin">5</div>
+                        <div class="office__item fakePin">6</div>
+                        <div class="office__item fakePin">7</div>
+                        <div class="office__item full fakePin">8</div> 
+                        <div class="office__item fakePin">9</div>
+                        <div class="office__item fakePin">10</div>
+                        <div class="office__item fakePin">11</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="height: 180vh; background-color: var(--c-lightRed);"></section>
+    </main>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/js/gsap/gsap.min.js"></script>
+    <script src="/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="/js/gsap/ScrollToPlugin.min.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <!-- <script src="/js/gsap/ScrollSmoother.min.js"></script> -->
+    <script src="/js/main.js"></script>
+    <script src="/js/home.js" defer></script>
+</body>
+</html>

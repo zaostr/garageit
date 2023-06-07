@@ -1,0 +1,8 @@
+.jb-bem-block{
+    color: black;
+    
+    &::after{
+        content: '';
+    }
+    
+}

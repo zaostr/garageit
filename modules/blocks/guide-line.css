@@ -1,0 +1,6 @@
+.jb-bem-block {
+  color: black;
+}
+.jb-bem-block::after {
+  content: "";
+}/*# sourceMappingURL=guide-line.css.map */

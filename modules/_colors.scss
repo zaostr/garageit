@@ -1,0 +1,45 @@
+@use "sass:list";
+
+
+$colors: (
+    "mainDark": "#001631",
+    "darkRed": "#E23820",
+    "lightRed": "#F54E39",
+    "darkBlue": "#2A31E8",
+    "lightBlue": "#3E45FF",
+    "white": "#ECECEE",
+    "grey": "#798493",
+    "realWhite": "#ffffff",
+    "realBlack": "#000000"
+);
+
+$opacity: (
+    100: 'FF',
+    90: 'E6',
+    85: 'D9',
+    80: 'CC',
+    75: 'BF',
+    70: 'B3',
+    60: '99',
+    50: '80',
+    40: '66',
+    30: '4D',
+    25: '40',
+    20: '33',
+    15: '26',
+    10: '1A',
+    5: '0D',
+    0: '00'
+);
+
+:root {
+    @each $colorName, $color in $colors {
+        @each $opacityName, $opacityItem in $opacity {
+            @if $opacityName == 100 {
+                --c-#{$colorName}: #{$color};
+            } @else {
+                --c-#{$colorName}-#{$opacityName}: #{$color}#{$opacityItem};
+            }
+        }
+    }
+}

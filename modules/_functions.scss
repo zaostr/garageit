@@ -1,0 +1,5 @@
+/*example font-size:30px;  font-size:pxToRem(30); */
+@function pxToRem($value) {
+    $remValue: calc($value / $font-size-base-px) + rem; 
+    @return $remValue;
+}
