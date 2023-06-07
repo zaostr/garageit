@@ -306,7 +306,7 @@ officeItems.forEach((officeItem, index) => {
         if (officeItem.classList.contains('full')) {
             console
             totalWidthToMove += -(container.offsetWidth) + officeItem.offsetWidth;
-        }
+        } 
         
         return totalWidthToMove;
       }
