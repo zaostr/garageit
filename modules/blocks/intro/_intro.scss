@@ -1,0 +1,21 @@
+.intro {
+    background-color: var(--c-white);
+    &__grid {
+        padding-top: calc(100px + var(--space-2xl));
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: calc(((52 / 16) * 1rem) + (80 - 52) * var(--fluid-bp));
+    }
+    &__text {
+        margin-bottom: var(--space-m);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    & .container {
+        padding-bottom: var(--space-3xl);
+    }
+    &__heading {
+        line-height: .84;
+    }
+}

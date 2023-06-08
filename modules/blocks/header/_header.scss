@@ -1,0 +1,111 @@
+header {
+    background-color: var(--c-white);
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //background-color: var(--c-realWhite);
+
+    & .container {
+        max-width: 1400px;
+    }
+}
+
+.header {
+    &__grid {
+        display: grid;
+        grid-template-columns: 2fr 1.125fr;
+        grid-gap: 40px;
+        padding-top: 20px;
+        border-bottom: 1px solid var(--c-lightBlue-10);
+    }
+    &__left {
+        display: grid;
+        justify-content: flex-start;
+        align-content: end;
+    }
+    &__logo {
+        display: grid;
+        margin-bottom: 15px;
+        align-self: flex-start;
+        & svg {
+            min-width: unset;
+            max-width: unset;
+            width: 102px;
+            height: auto;
+        }
+    }
+    &__right {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        grid-gap: 40px;
+    }
+    &__nav {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: flex-start;
+        grid-gap: 14px;
+        &--item {
+            padding: 0 10px;
+            height: 50px;
+            color: var(--c-grey);
+            letter-spacing: 0.08em;
+            font-size: var(--step--2);
+            line-height: 1.1 !important;
+            text-transform: uppercase;
+            overflow: hidden;
+            & > span {
+                display: flex;
+                align-items: flex-start;
+                height: 100%;
+                padding: 14px 0 0;
+                font-size: inherit;
+                position: relative;
+                color: inherit;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color: var(--c-grey);
+                    transform: translateY(100%);
+                    transition: .2s;
+                }
+            }
+            &.--active > span,
+            &:hover > span {
+                &:before {
+                    transform: translateY(0);
+                }
+            }
+            &.--active {
+                color: var(--c-lightBlue);
+            }
+            &.--active > span {
+                &:before {
+                    background-color: var(--c-darkBlue);
+                }
+            }
+        }
+    }
+    &__action {
+        align-self: flex-end;
+        margin-bottom: 20px;
+        /*display: flex;
+        align-items: center;
+        font-size: var(--step--2);
+        line-height: 1.1;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--c-mainDark);*/
+        &--label {
+            font-size: inherit;
+        }
+    }
+
+}

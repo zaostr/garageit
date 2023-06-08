@@ -8,15 +8,156 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <style>
-        .wrapper {
-            max-width: calc( var(--fluid-max-width) * 1px );
-            padding: 80px 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
+    <header>
+        <section id="header">
+            <div class="container">
+                <div class="header__grid">
+                    <div class="header__left">
+                        <a href="/" class="header__logo">
+                            <svg viewBox="0 0 103 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M62.325 9.84131C62.6569 10.6121 62.8409 11.4609 62.8409 12.3556C62.8409 15.966 59.8443 18.83 56.2264 18.83C55.1829 18.83 54.191 18.5918 53.3079 18.1661L52.2895 19.3104C52.1424 19.4757 52.0612 19.6892 52.0612 19.9105C52.0612 20.409 52.4653 20.8131 52.9638 20.8131H60.0395C62.1306 20.8131 63.8257 22.5082 63.8257 24.5992C63.8257 26.6903 62.1306 28.3854 60.0395 28.3854H59.2069V25.6445H60.0395C60.6168 25.6445 61.0848 25.1765 61.0848 24.5992C61.0848 24.0219 60.6168 23.5539 60.0395 23.5539H52.9638C50.9515 23.5539 49.3203 21.9227 49.3203 19.9105C49.3203 19.0174 49.6483 18.1555 50.242 17.4883L51.1328 16.4873C50.1851 15.371 49.6119 13.9347 49.6119 12.3556C49.6119 8.74507 52.6085 5.88107 56.2264 5.88107C57.7764 5.88107 59.2124 6.4068 60.3476 7.29171C61.059 6.32978 62.2016 5.70605 63.4899 5.70605H64.2368L64.2368 8.4469H63.4899C62.8465 8.4469 62.325 8.96842 62.325 9.61175V9.84131ZM52.3527 12.3556C52.3527 10.3282 54.0518 8.62191 56.2264 8.62191C58.4009 8.62191 60.1 10.3282 60.1 12.3556C60.1 14.3829 58.4009 16.0892 56.2264 16.0892C54.0518 16.0892 52.3527 14.3829 52.3527 12.3556Z" fill="#001631"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M40.0737 8.4469H42.5404C43.6757 8.4469 44.5961 9.36723 44.5961 10.5025V10.8062L40.248 10.8102C37.7999 10.8124 35.8164 12.7976 35.8164 15.2458C35.8164 17.6955 37.8023 19.6814 40.252 19.6814H44.8693C46.2317 19.6814 47.3361 18.577 47.3361 17.2147V16.1114H47.3369V10.5025C47.3369 7.8535 45.1894 5.70605 42.5404 5.70605H40.0737V8.4469ZM44.5961 15.9722V13.547L40.2505 13.551C39.3151 13.5518 38.5573 14.3104 38.5572 15.2458C38.5572 16.1818 39.316 16.9406 40.252 16.9406H44.5952V15.9722H44.5961Z" fill="#001631"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2377 8.4469H22.7045C23.8398 8.4469 24.7601 9.36723 24.7601 10.5025V10.8062L20.4121 10.8102C17.9639 10.8124 15.9805 12.7976 15.9805 15.2458C15.9805 17.6955 17.9664 19.6814 20.4161 19.6814H25.0334C26.3957 19.6814 27.5001 18.577 27.5001 17.2147V16.1114H27.501V10.5025C27.501 7.8535 25.3535 5.70605 22.7045 5.70605H20.2377V8.4469ZM24.7601 15.9722V13.547L20.4146 13.551C19.4792 13.5518 18.7213 14.3104 18.7213 15.2458C18.7213 16.1818 19.4801 16.9406 20.4161 16.9406H24.7593V15.9722H24.7601Z" fill="#001631"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0938 5.70508V19.674H32.8346V11.8715C33.1713 9.88354 34.8936 8.42688 36.9119 8.42685L37.1285 8.42685L37.1285 5.75453L36.9118 5.75453C35.3941 5.75455 33.978 6.25495 32.8346 7.11052V5.70508H30.0938Z" fill="#001631"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6336 9.84131C13.9655 10.6121 14.1495 11.4609 14.1495 12.3556C14.1495 15.966 11.1528 18.83 7.53496 18.83C6.49145 18.83 5.49962 18.5918 4.61648 18.1661L3.59809 19.3104C3.451 19.4757 3.36975 19.6892 3.36975 19.9105C3.36975 20.409 3.77387 20.8131 4.27237 20.8131H11.3481C13.4391 20.8131 15.1343 22.5082 15.1343 24.5992C15.1343 26.6903 13.4391 28.3854 11.3481 28.3854H10.5154V25.6445H11.3481C11.9254 25.6445 12.3934 25.1765 12.3934 24.5992C12.3934 24.0219 11.9254 23.5539 11.3481 23.5539H4.27237C2.26014 23.5539 0.628906 21.9227 0.628906 19.9105C0.628906 19.0174 0.956905 18.1555 1.55061 17.4883L2.4414 16.4873C1.49369 15.371 0.920461 13.9347 0.920461 12.3556C0.920461 8.74507 3.91707 5.88107 7.53496 5.88107C9.08502 5.88107 10.521 6.4068 11.6562 7.29171C12.3676 6.32978 13.5102 5.70605 14.7985 5.70605H15.5454L15.5454 8.4469H14.7985C14.1551 8.4469 13.6336 8.96842 13.6336 9.61175V9.84131ZM3.6613 12.3556C3.6613 10.3282 5.3604 8.62191 7.53496 8.62191C9.70951 8.62191 11.4086 10.3282 11.4086 12.3556C11.4086 14.3829 9.70951 16.0892 7.53496 16.0892C5.3604 16.0892 3.6613 14.3829 3.6613 12.3556Z" fill="#001631"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M69.8344 5.68555C67.5255 5.68555 65.6537 7.55732 65.6537 9.86627C65.6537 10.8087 65.9655 11.6783 66.4916 12.3775C65.6406 13.1428 65.1055 14.2524 65.1055 15.4871C65.1055 17.796 66.9772 19.6678 69.2862 19.6678H75.3836V16.9269H69.2862C68.491 16.9269 67.8463 16.2823 67.8463 15.4871C67.8463 14.6918 68.491 14.0472 69.2862 14.0472H72.7211V11.3063H72.31V11.3061H69.8344C69.0392 11.3061 68.3945 10.6615 68.3945 9.86627C68.3945 9.07104 69.0392 8.42639 69.8344 8.42639H74.1503V5.68555H69.8344Z" fill="#001631"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M87.6306 0C82.7217 0 78.7422 3.97947 78.7422 8.8884V23.8453H93.6991C98.608 23.8453 102.588 19.8659 102.588 14.9569V8.88841C102.588 3.97948 98.608 0 93.6991 0H87.6306ZM97.5273 16.4314L94.2383 16.4314C93.7454 16.4314 93.3476 16.0328 93.3476 15.5419V10.1758H96.7467V7.57198H93.3476V4.38541H90.7438L90.7438 15.5419C90.7438 17.4729 92.3093 19.0352 94.2383 19.0352H97.5273V16.4314ZM82.8164 8.59208H84.735C85.2291 8.59208 85.6258 8.99025 85.6258 9.48003L85.6258 19.0306H88.2296V9.48003C88.2296 7.54784 86.6628 5.98828 84.735 5.98828H82.8164V8.59208Z" fill="#F54E39"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__right">
+                        <nav class="header__nav">
+                            <a href="#" class="header__nav--item"><span>About</span></a>
+                            <a href="#" class="header__nav--item"><span>Careers</span></a>
+                            <a href="#" class="header__nav--item"><span>Events</span></a>
+                        </nav>
+                        <a href="#" class="btn btn-text header__action">
+                            <span class="btn--icon header__action--icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.19238 8.01001L5.19238 7.28516L6.00894 7.28516L6.00894 8.01001C6.00894 9.24867 7.19709 10.2528 8.66275 10.2528L14.0184 10.2528L14.0184 10.9429L8.66275 10.9429C6.74612 10.9429 5.19238 9.6298 5.19238 8.01001Z" fill="#798493" stroke="#798493" stroke-width="0.5"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.708 10.3962C14.8408 10.5085 14.8407 10.6906 14.7078 10.8028L12.5419 12.6322C12.409 12.7444 12.1936 12.7443 12.0608 12.632C11.9279 12.5197 11.928 12.3376 12.0609 12.2254L13.9862 10.5993L12.0621 8.97224C11.9293 8.85992 11.9294 8.67786 12.0623 8.5656C12.1952 8.45334 12.4106 8.4534 12.5434 8.56573L14.708 10.3962Z" fill="#798493" stroke="#798493" stroke-width="0.5"/>
+                                </svg>
+                            </span>
+                            <span class="header__action--label">Join Us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
     <main>
+        <section id="intro" class="intro">
+            <div class="container">
+                <div class="intro__grid">
+                    <div class="intro__col intro__col-1">
+                        <h1 class="intro__heading">We dream, code, and&nbsp;conquer</h1>
+                    </div>
+                    <div class="intro__col intro__col-2">
+                        <p class="intro__text">Join Garage IT, an international fintech&nbsp;company based in Tbilisi.</p>
+                        <a href="#" class="btn btn-primary intro__btn">Explore all jobs</a>
+                    </div>
+                </div>
+                <div class="intro__gallery">
+                    <div style="height: 474px; border-radius: 30px; background-color: var(--c-grey);"></div>
+                </div>
+            </div>
+        </section>
+        <section id="products" class="products">
+            <div class="container">
+                <div class="products__title-wrap">
+                    <h2 class="products__title">We build and promote financial products with <span class="c-lightRed">4+ million downloads in 180+ countries</span></h2>
+                </div>
+                <div class="products__grid">
+                    <div>
+                        <div class="products__item">
+                            <div>
+                                <div>
+                                    <svg class="products__item--icon" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M32.1313 128.461L11.186 128.461L11.186 69.6455L32.1313 69.6455C53.0447 69.6455 69.9984 52.6919 69.9984 31.7785L69.9984 10.8332L128.814 10.8332L128.814 31.7785C128.814 85.1747 85.5276 128.461 32.1313 128.461Z" fill="#D4D7DB"/>
+                                        <path d="M22.1857 58.8038C23.7478 57.2417 26.2805 57.2417 27.8426 58.8038C29.4047 60.3659 29.4047 62.8985 27.8426 64.4606C26.2805 66.0227 23.7478 66.0227 22.1857 64.4606C20.6236 62.8985 20.6236 60.3659 22.1857 58.8038Z" stroke="#F54E39" stroke-width="2"/>
+                                        <path d="M90.6857 45.961C92.2478 44.3989 94.7805 44.3989 96.3426 45.961C97.9047 47.5231 97.9047 50.0558 96.3426 51.6179C94.7805 53.18 92.2478 53.18 90.6857 51.6179C89.1236 50.0558 89.1236 47.5231 90.6857 45.961Z" stroke="#F54E39" stroke-width="2"/>
+                                        <path d="M76.0139 117.289C77.576 115.727 80.1086 115.727 81.6707 117.289C83.2328 118.851 83.2328 121.384 81.6707 122.946C80.1086 124.508 77.576 124.508 76.0139 122.946C74.4518 121.384 74.4518 118.851 76.0139 117.289Z" stroke="#F54E39" stroke-width="2"/>
+                                        <path d="M27.3692 58.7638L75.2244 10.7077C83.0451 2.85418 95.764 2.86782 103.568 10.7381V10.7381C111.314 18.5498 111.287 31.1534 103.508 38.9322L95.686 46.7545M55.4703 86.9708L91.4796 50.9609" stroke="#F54E39" stroke-width="2"/>
+                                        <path d="M89.4114 53.0295L41.3756 101.267C33.6311 109.044 33.6324 121.619 41.3786 129.394V129.394C49.1569 137.202 61.7956 137.214 69.5885 129.421L75.686 123.323M117.575 81.4332L81.5481 117.461" stroke="#F54E39" stroke-width="2"/>
+                                        <path d="M121.524 78.461C121.524 77.9087 121.076 77.461 120.524 77.461L111.524 77.4609C110.972 77.4609 110.524 77.9086 110.524 78.4609C110.524 79.0131 110.972 79.4609 111.524 79.4609L119.524 79.461L119.524 87.461C119.524 88.0133 119.972 88.461 120.524 88.461C121.076 88.461 121.524 88.0133 121.524 87.461L121.524 78.461ZM117.231 83.168L121.231 79.1681L119.817 77.7539L115.817 81.7538L117.231 83.168Z" fill="#F54E39"/>
+                                        </svg>
+                                </div>
+                                <div>
+                                    <h4 class="products__item--title">Native trading platform</h4>
+                                </div>
+                                <div>
+                                    <p class="products__item--text p">Complex cross-platform infrastructure that we reimagined for traders of any skill level</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack">
+                    <div>
+                        <p class="stack__text h4">Here's the stack we're using<br>to make it happen</p>
+                    </div>
+                    <div class="stack__areas">
+                        <div class="stack__area nodev">
+                            <p class="stack__area--desc">Marketers, analysts, traffic-managers, designers, writers</p>
+                            <div class="stack__area--items">
+                                <img class="stack__area--item" src="/img/stack/nodev-1.svg" alt="">
+                                <img class="stack__area--item" src="/img/stack/nodev-2.svg" alt="">
+                                <img class="stack__area--item" src="/img/stack/nodev-3.svg" alt="">
+                                <img class="stack__area--item" src="/img/stack/nodev-4.svg" alt="">
+                                <img class="stack__area--item" src="/img/stack/nodev-5.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="stack__area dev">
+                            <p class="stack__area--desc">Frontend devs, backend devs, mobile devs</p>
+                            <div class="stack__area--items">
+                                <img class="stack__area--item" src="/img/stack/nodev-1.svg" alt="">
+                                <img class="stack__area--item" src="/img/stack/nodev-2.svg" alt="">
+                                <img class="stack__area--item" src="/img/stack/nodev-3.svg" alt="">
+                                <img class="stack__area--item" src="/img/stack/nodev-4.svg" alt="">
+                                <img class="stack__area--item" src="/img/stack/nodev-5.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="values" class="values">
+            <div class="container">
+                <div>
+                    <h2>Our values</h2>
+                </div>
+            </div>
+        </section>
+        <section id="live" class="live">
+            <div class="container with-back">
+                <div class="live__cols">
+                    <div class="live__col live__col-1">
+                        <h2 class="live__title">We care about<br>how you live</h2>
+                    </div>
+                    <div class="live__col live__col-2">
+                        <div class="live__items">
+                            <div class="live__item">
+                                <div class="live__item--icon"></div>
+                                <div class="live__item--content">
+                                    <h4 class="live__item--title">Relocation to Tbilisi</h4>
+                                    <p class="live__item--desc">Covering tickets and first month of accommodation for you and your family</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .container,
+            .wrapper {
+                max-width: calc( var(--fluid-max-width) * 1px );
+                padding: 0 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
         <div class="wrapper">
             <h1>Test H1</h1>
             <h2>Test H2</h2>
@@ -25,6 +166,40 @@
             <p>Test P</p>
             <p class="fz-small">Test small</p>
             <p class="fz-xsmall">Test xsmall</p>
+
+            <div>
+                <button class="btn btn-primary">
+                    <div class="btn--label">
+                        <span>test</span>
+                        <span>test</span>
+                    </div>
+                </button>
+                <a href="#" class="btn btn-primary">
+                    <div class="btn--label">
+                        <span>test2</span>
+                        <span>test2</span>
+                    </div>
+                </a>
+            </div>
+
+            <div style="padding: 40px; background-color: var(--c-darkRed); margin-bottom: 16px;">
+                <div class="input">
+                    <input type="text" class="input-field" value="Alexander Parkinson" placeholder="Test" required/>
+                    <!-- <label class="input-label">Full name</label> -->
+                </div>
+                <button class="btn btn-secondary">
+                    <div class="btn--label">
+                        <span>test</span>
+                        <span>test</span>
+                    </div>
+                </button>
+                <button class="btn btn-secondary" disabled="disabled">
+                    <div class="btn--label">
+                        <span>test</span>
+                        <span>test</span>
+                    </div>
+                </button>
+            </div>
 
             <div style="height: var(--space-3xs); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
             <div style="height: var(--space-2xs); margin-bottom: 16px; background: var(--c-darkRed-80);"></div>
