@@ -1,21 +1,20 @@
-.live {
+.levelUp {
     max-width: 100vw;
     overflow-x: hidden;
+    color: var(--c-white);
     & .container {
         padding-top: calc(((52 / 16) * 1rem) + (100 - 52) * var(--fluid-bp));
         padding-bottom: calc(((100 / 16) * 1rem) + (116 - 100) * var(--fluid-bp));
 
         &::before {
-            background-color: var(--c-back);
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+            background-color: var(--c-lightRed);
         }
     }
 
     &__title {
-        color: var(--c-lightRed);
+        color: var(--c-white);
     }
-
+    
     &__cols {
         display: grid;
         grid-template-columns: minmax(255px, calc(100% / 3)) minmax(255px, calc((100% - 80px) / 3));
@@ -39,7 +38,7 @@
             width: calc(((60 / 16) * 1rem) + (80 - 60) * var(--fluid-bp));
             height: calc(((60 / 16) * 1rem) + (80 - 60) * var(--fluid-bp));
             border-radius: 50%;
-            border: solid 1px var(--c-mainDark-10);
+            border: solid 1px var(--c-realWhite-30);
             position: absolute;
             left: calc(-1 * calc(((60 / 16) * 1rem) + (80 - 60) * var(--fluid-bp)) - calc(((20 / 16) * 1rem) + (40 - 20) * var(--fluid-bp)));
             top: 0;
@@ -53,6 +52,7 @@
             width: 100%;
         }
         &--title {
+            color: var(--c-realWhite);
             margin-bottom: 12px;
         }
         &--desc {

@@ -8,6 +8,7 @@
         margin-bottom: calc(((52 / 16) * 1rem) + (80 - 52) * var(--fluid-bp));
     }
     &__text {
+        color: var(--c-mainDark);
         margin-bottom: var(--space-m);
         font-weight: 500;
         line-height: 1.2;

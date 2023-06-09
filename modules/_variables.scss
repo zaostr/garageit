@@ -1,4 +1,26 @@
 $font-size-base-px:16px;
 $mob:768px;
-$fluid-min-width: 320;
+$fluid-min-width: 375;
 $fluid-max-width: 1240;
+$fluidScreen: 100vw;
+@media screen and (min-width: 1240px) {
+    $fluidScreen: $fluid-max-width * 1px;
+}
+
+
+:root {
+    --fluid-min-width: $fluid-min-width;
+    --fluid-max-width: $fluid-max-width;
+  
+    --fluid-screen: 100vw;
+    --fluid-bp: calc(
+      (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+        (var(--fluid-max-width) - var(--fluid-min-width))
+    );
+  }
+  
+  @media screen and (min-width: 1240px) {
+    :root {
+        --fluid-screen: calc(var(--fluid-max-width) * 1px);
+    }
+  }

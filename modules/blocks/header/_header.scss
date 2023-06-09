@@ -6,7 +6,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    //background-color: var(--c-realWhite);
+    background-color: var(--c-realWhite-0);
+    z-index: 999;
 
     & .container {
         max-width: 1400px;

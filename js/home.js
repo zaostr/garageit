@@ -11,6 +11,18 @@ let smoother = ScrollSmoother.create({
   effects: true,
 });*/
 
+gsap.fromTo(document.getElementById('header'), {backgroundColor: '#FFFFFF00'}, {
+    backgroundColor: '#FFFFFF',
+    ease:"linear",
+    scrollTrigger: {
+        trigger: document.getElementsByTagName('header'),
+        start: 'top -1px',
+        end: 'bottom bottom',
+        scrub: 1,
+        duration: 5
+    },
+});
+
 const lottie = document.getElementById('lot');
 
 function nativeOffset(el) {
@@ -200,17 +212,20 @@ gsap.to('.sw', {
 */
 
 
-const timeline1 = gsap.timeline({
-    paused: true,
-    scrollTrigger: {
-        invalidateOnRefresh: true,
-        trigger: '.row',
-        start: 'top 80px',
-        end: () => `${document.querySelector('.row').offsetHeight - gsap.utils.toArray('.item')[gsap.utils.toArray('.item').length - 1].offsetHeight}`,
-        pin: '.sw',
-    },
-    //scrub: true,
-});
+if (document.querySelector('.row')) {
+    const timeline1 = gsap.timeline({
+        paused: true,
+        scrollTrigger: {
+            invalidateOnRefresh: true,
+            trigger: '.row',
+            start: 'top 80px',
+            end: () => `${document.querySelector('.row').offsetHeight - gsap.utils.toArray('.item')[gsap.utils.toArray('.item').length - 1].offsetHeight}`,
+            pin: '.sw',
+        },
+        //scrub: true,
+    });
+}
+
 
 
 
@@ -238,19 +253,22 @@ let officeItems = gsap.utils.toArray(".office__item");
 
 
 
-const tl = gsap.timeline({
-    paused: true,
-    scrollTrigger: {
-        invalidateOnRefresh: true,
-        trigger: '.office__section',
-        start: 'top top',
-        end: () => `${container.scrollWidth} bottom`,
-        pin: '.office',
-        markers: true,
-        invalidateOnRefresh: true,
-    },
-    //scrub: true,
-});
+if (container) {
+    const tl = gsap.timeline({
+        paused: true,
+        scrollTrigger: {
+            invalidateOnRefresh: true,
+            trigger: '.office__section',
+            start: 'top top',
+            end: () => `${container.scrollWidth} bottom`,
+            pin: '.office',
+            markers: true,
+            invalidateOnRefresh: true,
+        },
+        //scrub: true,
+    });
+}
+
 
 
 

@@ -191,7 +191,7 @@ footer, header, hgroup, menu, nav, section {
           transform: translateX(-50%);
           width: calc(100vw - 80px);
           height: 100%;
-          max-width: calc(var(--fluid-max-width) * 1px + 80px * 2);
+          max-width: calc(var(--fluid-max-width) * 1px + 60px * 2);
           background-color: var(--c-back);
           border-radius: 32px;
       }
@@ -294,6 +294,32 @@ p,.p {
   align-items: center;
   color: var(--c-mainDark);
 }
+
+.btn.btn-control {
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  min-width: unset;
+  background-color: transparent;
+  border: solid 1px var(--c-stroke-70);
+  background-position: center;
+  background-size: 8px;
+  background-repeat: no-repeat;
+}
+.btn.btn-control:hover {
+  border-color: var(--c-grey);
+}
+.btn.btn-control.btn-prev {
+  background-image: url(/img/icons/prev.svg);
+}
+.btn.btn-control.btn-next {
+  background-image: url(/img/icons/next.svg);
+}
+.btn.btn-control:focus,
+.btn.btn.btn-control:active {
+  border-color: var(--c-mainDark);
+}
+
 .btn .btn--icon {
   width: 20px;
   height: 20px;

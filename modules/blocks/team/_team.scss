@@ -1,0 +1,99 @@
+.team {
+    margin: var(--space-3xl) 0;
+
+    &__above {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: minmax(300px, 480px) minmax(255px, calc((100% - 80px) / 3));
+        justify-content: space-between;
+        margin-bottom: var(--space-l-xl);
+    }
+
+    &__desc {
+        color: var(--c-mainDark);
+    }
+
+    &__slider {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        &--control {
+            display: grid;
+            grid-gap: 8px;
+            grid-auto-flow: column;
+            justify-content: flex-start;
+            margin-top: var(--space-l-xl);
+        }
+    }
+
+    &__item {
+        background-color: var(--c-grey);
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 32px;
+        display: grid;
+        align-content: space-between;
+        grid-gap: 20px;
+        height: calc(((400 / 16) * 1rem) + (440 - 400) * var(--fluid-bp));
+
+        &--content {
+            max-width: 284px;
+        }
+    }
+
+    &__play {
+        display: block;
+        width: 32px;
+        height: 32px;
+        
+        & svg {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__heart {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background-color: var(--c-lightRed);
+        border-radius: 10px;
+        border-bottom-right-radius: 0;
+        margin-bottom: 8px;
+
+        & svg {
+            display: block;
+            width: 12px;
+        }
+    }
+
+    &__member {
+        padding: 22px 40px 22px 32px;
+        background-color: var(--c-back);
+        border-radius: 24px;
+        border-top-left-radius: 0;
+        
+        & * {
+            font-size: var(--step--1);
+        }
+
+        &--name {
+            color: var(--c-mainDark);
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .team {
+        &__slider {
+            &--control {
+                justify-content: center;
+            }
+        }
+    }
+}
